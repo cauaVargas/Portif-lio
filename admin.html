@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Área Administrativa</h1>
+  </header>
+
+  <main>
+    <section id="login-section">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" placeholder="Digite o Usuário" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" placeholder="Digite a Senha" required>
+
+        <button type="submit">Entrar</button>
+      </form>
+    </section>
+
+    <section id="admin-section" style="display:none;">
+      <h2>Editar Informações</h2>
+      <form id="admin-form">
+        <label>Sobre Mim:</label>
+        <textarea id="sobre-edit" placeholder="Escreva uma breve apresentação..."></textarea>
+
+        <label>Contatos <small>(links ou texto, separados por vírgula)</small>:</label>
+        <input type="text" id="contatos-edit" placeholder="ex: email@exemplo.com, https://linkedin.com/in/caua">
+
+        <label>Experiências <small>(somente texto, separadas por vírgula)</small>:</label>
+        <input type="text" id="exp-edit" placeholder="ex: Estudante de TI, Peão na cultura do tabaco">
+
+        <label>Projetos <small>(use Nome|Link, separados por vírgula)</small>:</label>
+        <input type="text" id="proj-edit" placeholder="ex: Blog Pessoal|https://meublog.com, Sistema|https://github.com">
+
+        <button type="submit">Salvar Alterações</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
